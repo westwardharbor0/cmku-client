@@ -1,0 +1,5 @@
+requests
+marshmallow
+bs4
+wheel
+lxml
