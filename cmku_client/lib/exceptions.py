@@ -3,10 +3,14 @@ class ActionNotFound(Exception):
     pass
 
 
-class ClubNotFound(Exception):
+class ActionNameNotSpecified(Exception):
     pass
 
 
-class ActionTypeNotSpecified(Exception):
+class ActionDateNotSpecified(Exception):
+    pass
+
+
+class ActionDateIsNotDatetime(Exception):
     pass
 
