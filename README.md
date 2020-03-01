@@ -1,11 +1,15 @@
 # cmku-client
 Small library to access data from www.cmku.cz in your Python code <br>
 <strong>Note</strong>: all actions are only half year to the future
-#Features
+# Features
 - get latest dog actions from source
 - get breeds list 
 - get actions types
 - cache already loaded results
+# Install
+```
+pip install cmku-client
+```
 # Examples
 ### Enable cache
 Enable caching to load all results only ones
