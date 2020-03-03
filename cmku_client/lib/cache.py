@@ -4,7 +4,7 @@ class Cacher(object):
     """
     Used to store already loaded info and save traffic
     """
-    def __init__(self, cache=True):
+    def __init__(self, cache=False):
         self._enabled_cache = cache
         self._cache = {}
 

@@ -4,6 +4,7 @@ from setuptools import setup, find_packages
 
 here = dirname(abspath(__file__))
 requirements = open(join(here, "requirements.txt"))
+test_requirements = open(join(here, "test-requirements.txt"))
 
 
 with open("README.md", "r") as fh:
@@ -19,7 +20,9 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/westwardharbor0/cmku-client",
     packages=find_packages(),
-    setup_requires=requirements.readlines(),
+    setup_requires=(requirements.readlines(), test_requirements.readlines()),
     install_requires=requirements.readlines(),
     py_modules=["cmku_client"],
+    test_suite="pytest",
+    tests_require=['tests']
 )
